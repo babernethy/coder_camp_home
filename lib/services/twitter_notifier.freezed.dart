@@ -19,7 +19,7 @@ mixin _$TwitterState {
   String? get accessToken => throw _privateConstructorUsedError;
   String? get refreshToken => throw _privateConstructorUsedError;
   List<TweetData>? get tweets => throw _privateConstructorUsedError;
-  List<UserData>? get user => throw _privateConstructorUsedError;
+  UserData? get user => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $TwitterStateCopyWith<TwitterState> get copyWith =>
@@ -35,7 +35,9 @@ abstract class $TwitterStateCopyWith<$Res> {
       {String? accessToken,
       String? refreshToken,
       List<TweetData>? tweets,
-      List<UserData>? user});
+      UserData? user});
+
+  $UserDataCopyWith<$Res>? get user;
 }
 
 /// @nodoc
@@ -69,8 +71,19 @@ class _$TwitterStateCopyWithImpl<$Res> implements $TwitterStateCopyWith<$Res> {
       user: user == freezed
           ? _value.user
           : user // ignore: cast_nullable_to_non_nullable
-              as List<UserData>?,
+              as UserData?,
     ));
+  }
+
+  @override
+  $UserDataCopyWith<$Res>? get user {
+    if (_value.user == null) {
+      return null;
+    }
+
+    return $UserDataCopyWith<$Res>(_value.user!, (value) {
+      return _then(_value.copyWith(user: value));
+    });
   }
 }
 
@@ -85,7 +98,10 @@ abstract class _$$_TwitterStateCopyWith<$Res>
       {String? accessToken,
       String? refreshToken,
       List<TweetData>? tweets,
-      List<UserData>? user});
+      UserData? user});
+
+  @override
+  $UserDataCopyWith<$Res>? get user;
 }
 
 /// @nodoc
@@ -120,9 +136,9 @@ class __$$_TwitterStateCopyWithImpl<$Res>
           : tweets // ignore: cast_nullable_to_non_nullable
               as List<TweetData>?,
       user: user == freezed
-          ? _value._user
+          ? _value.user
           : user // ignore: cast_nullable_to_non_nullable
-              as List<UserData>?,
+              as UserData?,
     ));
   }
 }
@@ -134,9 +150,8 @@ class _$_TwitterState implements _TwitterState {
       {this.accessToken,
       this.refreshToken,
       final List<TweetData>? tweets,
-      final List<UserData>? user})
-      : _tweets = tweets,
-        _user = user;
+      this.user})
+      : _tweets = tweets;
 
   @override
   final String? accessToken;
@@ -151,14 +166,8 @@ class _$_TwitterState implements _TwitterState {
     return EqualUnmodifiableListView(value);
   }
 
-  final List<UserData>? _user;
   @override
-  List<UserData>? get user {
-    final value = _user;
-    if (value == null) return null;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
-  }
+  final UserData? user;
 
   @override
   String toString() {
@@ -175,7 +184,7 @@ class _$_TwitterState implements _TwitterState {
             const DeepCollectionEquality()
                 .equals(other.refreshToken, refreshToken) &&
             const DeepCollectionEquality().equals(other._tweets, _tweets) &&
-            const DeepCollectionEquality().equals(other._user, _user));
+            const DeepCollectionEquality().equals(other.user, user));
   }
 
   @override
@@ -184,7 +193,7 @@ class _$_TwitterState implements _TwitterState {
       const DeepCollectionEquality().hash(accessToken),
       const DeepCollectionEquality().hash(refreshToken),
       const DeepCollectionEquality().hash(_tweets),
-      const DeepCollectionEquality().hash(_user));
+      const DeepCollectionEquality().hash(user));
 
   @JsonKey(ignore: true)
   @override
@@ -197,7 +206,7 @@ abstract class _TwitterState implements TwitterState {
       {final String? accessToken,
       final String? refreshToken,
       final List<TweetData>? tweets,
-      final List<UserData>? user}) = _$_TwitterState;
+      final UserData? user}) = _$_TwitterState;
 
   @override
   String? get accessToken;
@@ -206,7 +215,7 @@ abstract class _TwitterState implements TwitterState {
   @override
   List<TweetData>? get tweets;
   @override
-  List<UserData>? get user;
+  UserData? get user;
   @override
   @JsonKey(ignore: true)
   _$$_TwitterStateCopyWith<_$_TwitterState> get copyWith =>
