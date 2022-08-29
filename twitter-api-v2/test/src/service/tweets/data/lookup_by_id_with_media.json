@@ -1,0 +1,53 @@
+{
+    "data": {
+        "id": "1067094924124872705",
+        "text": "Just getting started with Twitter APIs? Find out what you need in order to build an app. Watch this video! https://t.co/Hg8nkfoizN"
+    },
+    "includes": {
+        "media": [
+            {
+                "media_key": "13_1263145212760805376",
+                "type": "video",
+                "url": "https://www.test.com",
+                "duration_ms": 46947,
+                "height": 1080,
+                "width": 1920,
+                "alt_text": "Rugged hills along the Na Pali coast on the island of Kauai",
+                "non_public_metrics": {
+                    "playback_0_count": 1561,
+                    "playback_100_count": 116,
+                    "playback_25_count": 559,
+                    "playback_50_count": 305,
+                    "playback_75_count": 183
+                },
+                "organic_metrics": {
+                    "playback_0_count": 1561,
+                    "playback_100_count": 116,
+                    "playback_25_count": 559,
+                    "playback_50_count": 305,
+                    "playback_75_count": 183,
+                    "view_count": 629
+                },
+                "preview_image_url": "https://pbs.twimg.com/media/EYeX7akWsAIP1_1.jpg",
+                "promoted_metrics": {
+                    "playback_0_count": 259,
+                    "playback_100_count": 15,
+                    "playback_25_count": 113,
+                    "playback_50_count": 57,
+                    "playback_75_count": 25,
+                    "view_count": 124
+                },
+                "public_metrics": {
+                    "view_count": 6865141
+                },
+                "variants": [
+                    {
+                        "bit_rate": 632000,
+                        "content_type": "video/mp4",
+                        "url": "https://video.twimg.com/ext_tw_video/1527322141724532740/pu/vid/320x568/lnBaR2hCqE-R_90a.mp4?tag=12"
+                    }
+                ]
+            }
+        ]
+    }
+}

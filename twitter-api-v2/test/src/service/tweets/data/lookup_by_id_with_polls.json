@@ -1,0 +1,28 @@
+{
+    "data": {
+        "id": "1067094924124872705",
+        "text": "Just getting started with Twitter APIs? Find out what you need in order to build an app. Watch this video! https://t.co/Hg8nkfoizN"
+    },
+    "includes": {
+        "polls": [
+            {
+                "id": "1199786642791452673",
+                "options": [
+                    {
+                        "position": 1,
+                        "label": "“C Sharp”",
+                        "votes": 795
+                    },
+                    {
+                        "position": 2,
+                        "label": "“C Hashtag”",
+                        "votes": 156
+                    }
+                ],
+                "duration_minutes": 1440,
+                "end_datetime": "2019-11-28T20:26:41.000Z",
+                "voting_status": "closed"
+            }
+        ]
+    }
+}

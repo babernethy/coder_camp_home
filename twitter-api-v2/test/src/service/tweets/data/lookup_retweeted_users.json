@@ -1,0 +1,22 @@
+{
+    "data": [
+        {
+            "id": "1065249714214457345",
+            "name": "Spaces",
+            "username": "TwitterSpaces"
+        },
+        {
+            "id": "783214",
+            "name": "Twitter",
+            "username": "Twitter"
+        },
+        {
+            "id": "1526228120",
+            "name": "Twitter Data",
+            "username": "TwitterData"
+        }
+    ],
+    "meta": {
+        "result_count": 3
+    }
+}

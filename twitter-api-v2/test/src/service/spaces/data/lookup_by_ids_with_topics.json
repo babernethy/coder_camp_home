@@ -1,0 +1,166 @@
+{
+    "data": [
+        {
+            "id": "1LyGBoaqMLOJN",
+            "state": "live",
+            "topic_ids": [
+                "847527650667094017",
+                "839544274442051584"
+            ]
+        },
+        {
+            "id": "1dRKZlZlddwJB",
+            "state": "live",
+            "topic_ids": [
+                "847544972781826048",
+                "847868745150119936",
+                "1280550787207147521"
+            ]
+        },
+        {
+            "id": "1djxXPoDRjkxZ",
+            "state": "scheduled",
+            "topic_ids": [
+                "839543456678596608",
+                "857879302733418496",
+                "10045225402"
+            ]
+        },
+        {
+            "id": "1jMJgeXdgZqKL",
+            "state": "scheduled",
+            "topic_ids": [
+                "839544274442051584",
+                "1242522851967504385",
+                "856976742166048769"
+            ]
+        },
+        {
+            "id": "1RDGlgrblvrKL",
+            "state": "scheduled",
+            "topic_ids": [
+                "10045225402",
+                "10044199219",
+                "872801738394279936"
+            ]
+        },
+        {
+            "id": "1PlJQaNAVwdJE",
+            "state": "scheduled",
+            "topic_ids": [
+                "857879016971186177",
+                "857878521472888832",
+                "839543456678596608"
+            ]
+        },
+        {
+            "id": "1BRJjnYLEOVJw",
+            "state": "scheduled",
+            "topic_ids": [
+                "10045225402",
+                "848920371311001600"
+            ]
+        },
+        {
+            "id": "1dRKZlZNygwJB",
+            "state": "ended"
+        }
+    ],
+    "includes": {
+        "topics": [
+            {
+                "description": "All about gaming",
+                "id": "847527650667094017",
+                "name": "Gaming"
+            },
+            {
+                "description": "All about entertainment",
+                "id": "839544274442051584",
+                "name": "Entertainment"
+            },
+            {
+                "description": "All about careers",
+                "id": "847544972781826048",
+                "name": "Careers"
+            },
+            {
+                "description": "All about family and relationships",
+                "id": "847868745150119936",
+                "name": "Family & relationships"
+            },
+            {
+                "description": "All about arts and culture",
+                "id": "1280550787207147521",
+                "name": "Arts & culture"
+            },
+            {
+                "description": "Entertainment",
+                "id": "839543456678596608",
+                "name": "Digital creators"
+            },
+            {
+                "description": "Business & finance",
+                "id": "857879302733418496",
+                "name": "Entrepreneurship"
+            },
+            {
+                "description": "Social media",
+                "id": "10045225402",
+                "name": "Twitter"
+            },
+            {
+                "description": "Comedy",
+                "id": "1242522851967504385",
+                "name": "Famous comedians"
+            },
+            {
+                "description": "Movie genre",
+                "id": "856976742166048769",
+                "name": "Documentary films"
+            },
+            {
+                "description": "Brand",
+                "id": "10044199219",
+                "name": "Tesla Motors"
+            },
+            {
+                "description": "Space",
+                "id": "872801738394279936",
+                "name": "SpaceX"
+            },
+            {
+                "description": "Business & finance",
+                "id": "857879016971186177",
+                "name": "Marketing"
+            },
+            {
+                "description": "Business & finance",
+                "id": "857878521472888832",
+                "name": "Advertising"
+            },
+            {
+                "description": "All about technology",
+                "id": "848920371311001600",
+                "name": "Technology"
+            },
+            {
+                "description": "Gaming genre",
+                "id": "1197906382529294337",
+                "name": "Competitive games"
+            },
+            {
+                "description": "All about music",
+                "id": "847524658970636288",
+                "name": "Music"
+            },
+            {
+                "description": "All about art",
+                "id": "1265660441822281728",
+                "name": "Art"
+            }
+        ]
+    },
+    "meta": {
+        "result_count": 26
+    }
+}

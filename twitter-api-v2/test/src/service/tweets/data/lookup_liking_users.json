@@ -1,0 +1,33 @@
+{
+    "data": [
+        {
+            "id": "1065249714214457345",
+            "name": "Spaces",
+            "username": "TwitterSpaces"
+        },
+        {
+            "id": "783214",
+            "name": "Twitter",
+            "username": "Twitter"
+        },
+        {
+            "id": "1526228120",
+            "name": "Twitter Data",
+            "username": "TwitterData"
+        },
+        {
+            "id": "2244994945",
+            "name": "Twitter Dev",
+            "username": "TwitterDev"
+        },
+        {
+            "id": "6253282",
+            "name": "Twitter API",
+            "username": "TwitterAPI"
+        }
+    ],
+    "meta": {
+        "result_count": 5,
+        "next_token": "7140dibdnow9c7btw481cuje85fgk49ahrpmolkaezsjc"
+    }
+}

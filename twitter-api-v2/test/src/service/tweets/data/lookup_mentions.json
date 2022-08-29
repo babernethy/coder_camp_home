@@ -1,0 +1,30 @@
+{
+    "data": [
+        {
+            "id": "1375152598945312768",
+            "text": "@LeBraat @TwitterDev @LeGuud There's enough @twitterdev love to go around, @LeBraat"
+        },
+        {
+            "id": "1375152449594523649",
+            "text": "Apparently I'm not the only one (of my test accounts) that loves @TwitterDev nn@LeStaache @LeGuud"
+        },
+        {
+            "id": "1375152043455873027",
+            "text": "Can I join this @twitterdev love party?!"
+        },
+        {
+            "id": "1375151947360174082",
+            "text": "I love me some @twitterdev too!"
+        },
+        {
+            "id": "1375151827189137412",
+            "text": "This is a test, but also a good excuse to express my love for @TwitterDev 😍"
+        }
+    ],
+    "meta": {
+        "oldest_id": "1375151827189137412",
+        "newest_id": "1375152598945312768",
+        "result_count": 5,
+        "next_token": "7140dibdnow9c7btw3w3y5b6jqjnk3k4g5zkmfkvqwa42"
+    }
+}

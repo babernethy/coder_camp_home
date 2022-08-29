@@ -1,0 +1,33 @@
+{
+    "data": [
+        {
+            "id": "1319036828964454402",
+            "name": "Birdwatch",
+            "username": "birdwatch"
+        },
+        {
+            "id": "1244731491088809984",
+            "name": "Twitter Thailand",
+            "username": "TwitterThailand"
+        },
+        {
+            "id": "1194267639100723200",
+            "name": "Twitter Retweets",
+            "username": "TwitterRetweets"
+        },
+        {
+            "id": "1168976680867762177",
+            "name": "Twitter Able",
+            "username": "TwitterAble"
+        },
+        {
+            "id": "1065249714214457345",
+            "name": "Spaces",
+            "username": "TwitterSpaces"
+        }
+    ],
+    "meta": {
+        "result_count": 5,
+        "next_token": "5676935732641845249"
+    }
+}
