@@ -1,9 +1,11 @@
-import 'package:coder_camp_home/services/twitter_notifier.dart';
 import 'package:flutter/material.dart';
+// ignore: depend_on_referenced_packages
+import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 void main() {
+  usePathUrlStrategy();
   runApp(const ProviderScope(child: MyApp()));
 }
 
@@ -16,15 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Coder Camp - Home',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
+        useMaterial3: true,
         primarySwatch: Colors.blue,
       ),
       home: const MyHomePage(),
@@ -44,13 +38,7 @@ class MyHomePage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final twitterNotifier = ref.watch(twitterNotifierProvider);
     return Scaffold(
-      // appBar: AppBar(
-      //   // Here we take the value from the MyHomePage object that was created by
-      //   // the App.build method, and use it to set our appbar title.
-      //   title: Text(widget.title),
-      // ),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
@@ -112,36 +100,36 @@ class MyHomePage extends ConsumerWidget {
                                 ),
                               ),
                             ),
+                            const SizedBox(height: 50),
                             ElevatedButton(
                               onPressed: () {
                                 _launchUrl(
                                   'https://coder.camp/fruitfulflutter',
                                 );
                               },
-                              child:
-                                  const Text('Presentation: Fruitful Flutter'),
-                            ),
-                            ElevatedButton(
-                              onPressed: () {
-                                //  _launchUrl('https://coder.camp/ale');
-                              },
-                              child: const Text(
-                                'Adventure Learning Environment (ALE)',
+                              child: const Padding(
+                                padding: EdgeInsets.all(8.0),
+                                child: Text(
+                                  'Presentation: Fruitful Flutter',
+                                  style: TextStyle(fontSize: 20),
+                                ),
                               ),
                             ),
-                            if (twitterNotifier.tweets != null)
-                              for (final tweet in twitterNotifier.tweets!)
-                                Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Text(
-                                    tweet.text,
-                                    textAlign: TextAlign.center,
-                                    style: const TextStyle(
-                                      fontSize: 9,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
+                            const SizedBox(height: 50),
+                            ElevatedButton(
+                              onPressed: () {
+                                _launchUrl(
+                                  'https://coder.camp/ale/course/codeMash23',
+                                );
+                              },
+                              child: const Padding(
+                                padding: EdgeInsets.all(8.0),
+                                child: Text(
+                                  'CodeMash 2023: Precompiler: Flutter Multiplatform Applications',
+                                  style: TextStyle(fontSize: 20),
                                 ),
+                              ),
+                            ),
                           ],
                         ),
                       ),
